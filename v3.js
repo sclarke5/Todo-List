@@ -61,17 +61,27 @@ var todoList = {
   }
 };
 
-//Access to display todos button
-var displayTodosButton = document.getElementById('displayTodosButton');
-var toggleAllButton = document.getElementById('toggleAllButton');
+  //Older version; more explicit before refactoring
+    //Access to display todos button
+// var displayTodosButton = document.getElementById('displayTodosButton');
+// var toggleAllButton = document.getElementById('toggleAllButton');
+// 
+    // //run displayTodos method when said button is clicked
+// displayTodosButton.addEventListener('click', function(){
+//   todoList.displayTodos();
+// });
+// toggleAllButton.addEventListener('click', function(){
+//   todoList.toggleAll();
+// });
 
-//run displayTodos method when said button is clicked
-displayTodosButton.addEventListener('click', function(){
-  todoList.displayTodos();
-});
-toggleAllButton.addEventListener('click', function(){
-  todoList.toggleAll();
-});
+var handlers = {
+  displayTodos: function(){
+    todoList.displayTodos();
+  },
+  toggleAll: function(){
+    todoList.toggleAll();
+  }
+};
 
 
 
