@@ -1,3 +1,42 @@
-h1{
-  color: blue;
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background:grey;
+  padding:25px;
+  max-width:500px;
+  margin:50px auto;
+  overflow:hidden;
+  border-radius:10px;
+  border:4px solid black;
+  font-family: sans-serif;
+}
+
+div {
+  margin: 15px;
+}
+
+li {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+ul li:nth-child(even) {
+    color: white;
+}
+
+.deleteButton {
+  float: right;
+}
+
+
+
+h1 {
+  color: black;
+  text-align: center;
 }

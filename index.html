@@ -9,29 +9,33 @@
   </head>
 
   <body>
+
+  <section class="container">
+
+
     <h1>My Todo List</h1>
 
 <!--  Older version before refactoring-->
     <!-- <button id="displayTodosButton">Display Todos</button>
     <button id="toggleAllButton">Toggle All</button> -->
     <div>
-      <button onclick="handlers.toggleAll()">Toggle All</button>
-    </div>
-
-    <div>
         <button onclick="handlers.addTodo()">Add</button>
-        <input id="addTodoTextInput" type="text"/>
+        <input id="addTodoTextInput" type="text" placeholder="Add New"/>
     </div>
 
     <div>
       <button onclick="handlers.changeTodo()">Change Todo</button>
-      <input id="changeTodoPositionInput" type="number">
-      <input id="changeTodoTextInput" type="text">
+      <input id="changeTodoPositionInput" type="number" placeholder="Select Position">
+      <input id="changeTodoTextInput" type="text" placeholder="New Todo">
     </div>
 
     <div>
       <button onclick="handlers.toggleCompleted()">Toggle Compelted</button>
       <input id="toggleCompletedPositionInput" type="number">
+    </div>
+
+    <div>
+      <button onclick="handlers.toggleAll()">Toggle All</button>
     </div>
 
     <ul>
@@ -40,5 +44,6 @@
 
         <script src="v3.js"></script>
 
+    </section>
   </body>
 </html>
