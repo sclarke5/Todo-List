@@ -20,6 +20,11 @@ div {
 li {
   margin-top: 7px;
   margin-bottom: 7px;
+  list-style: none;
+}
+
+li:hover {
+  background: #ddd;
 }
 
 ul li:nth-child(odd) {
