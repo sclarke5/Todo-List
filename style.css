@@ -39,6 +39,10 @@ ul li:nth-child(even) {
   float: right;
 }
 
+ul {
+  text-align: center;
+  margin-left: -38px;
+}
 
 
 h1 {
